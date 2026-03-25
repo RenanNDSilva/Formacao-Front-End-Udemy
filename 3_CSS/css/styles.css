@@ -158,3 +158,284 @@ h2 {
     padding: 50px;
     box-sizing: border-box;
 }
+
+/* Border */
+.border {
+    border: 5px solid red;
+    padding: 10px;
+}
+
+.border-2 {
+    border: 2px dotted blue;
+    padding: 10px;
+}
+
+/* Border Individual */
+.border-top {
+    border-top: 5px solid green;
+    padding: 10px;
+}
+
+.border-right {
+    border-right: 5px solid blue;
+    padding: 10px;
+}
+
+.border-bottom {
+    border-bottom: 5px solid yellow;
+    padding: 10px;
+}
+
+.border-left {
+    border-left: 5px solid purple;
+    padding: 10px;
+}
+
+/* Borda Arredondada */
+.rounded-p {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.rounded-p-2 {
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+/* Margin */
+.margin {
+    margin: 10px;
+}
+
+.margin-top {
+    margin-top: 20px;
+}
+
+.margin-shorthand {
+    margin: 10px 20px 30px 40px;
+}
+
+/* Box Model */
+.box-model {
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid blue;
+    border-radius: 7px;
+    width: 200px;
+    height: 400px;
+}
+
+/* Text alignment */
+.text-aligned {
+    text-align: right;
+}
+
+.container-center {
+    text-align: center;
+    width: 300px;
+    border: 1px solid red;
+}
+
+/* Text Decoration */
+.underline {
+    text-decoration: underline;
+}
+
+.line-trough {
+    text-decoration: line-through;
+}
+
+.remove-underline {
+    text-decoration: none;
+}
+
+/* Text Transform */
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+/* Letter Spacing */
+.spacing {
+    letter-spacing: 2px;
+}
+
+/* Fontes */
+.serif {
+    font-family: serif;
+}
+
+.sans-serif {
+    font-family: sans-serif;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+/* Font Style */
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+/* Font Weight */
+.thin {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.bold {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.bolder {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+/* Font Size */
+.small {
+    font-size: 12px;
+}
+
+.big {
+    font-size: 24px;
+}
+
+/* Display */
+.inline-box {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: lightgray;
+    border: 1px solid #ccc;
+}
+
+/* Esconder Elementos */
+.invisible {
+    display: none;
+}
+
+/* Static */
+.static {
+    position: static;
+    background-color: #391;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+
+/* Relative */
+.relative {
+    position: relative;
+    background-color: #341;
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 40px;
+}
+
+/* Absolute */
+.absolute {
+    position: absolute;
+    background-color: #555;
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+}
+
+/* Relative with Absolute */
+.relative-container {
+    border: 1px solid red;
+    width: 300px;
+    height: 300px;
+    margin-top: 120px;
+    position: relative;
+}
+
+.absolute-1, .absolute-2 {
+    position: absolute;
+    background-color: #422;
+    width: 50px;
+    height: 50px;
+}
+
+.absolute-1 {
+    top: 10px;
+    left: 10px;
+}
+
+.absolute-2 {
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Fixed */
+.fixed {
+    position: fixed;
+    background-color: #555;
+    color: white;
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    right: 10px;
+}
+
+/* Sticky */
+.sticky {
+    width: 100px;
+    height: 100px;
+    background-color: #994;
+    border: 1px solid green;
+    position: sticky;
+    top: 50px;
+}
+
+/* Z-Index */
+.absolute-3, .absolute-4, .absolute-5 {
+    width: 50px;
+    height: 50px;
+    background-color: #123;
+    position: absolute;
+}
+
+.absolute-3 {
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.absolute-4 {
+    top: 10px;
+    left: 10px;
+    background-color: #246;
+    z-index: 2;
+}
+
+.absolute-5 {
+    top: 40px;
+    left: 40px;
+    background-color: #789;
+    z-index: 1;
+}
