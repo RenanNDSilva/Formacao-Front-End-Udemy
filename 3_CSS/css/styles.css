@@ -87,3 +87,74 @@ h2 {
     padding: 10px;
     color: #fff;
 }
+
+/* Centralizando background com imagem */
+.not-centered-bg,
+.centered-bg {
+    height: 400px;
+    width: 400px;
+    background-image: url(../img/Quadro_da_natureza.jpg);
+}
+
+.centered-bg {
+    background-position: center;
+    background-size: cover;
+}
+
+/* Largura e Altura */
+.height-width {
+    height: 200px;
+    width: 100px;
+    background-color: red;
+}
+
+/* Padding */
+.without-padding {
+    background-color: blue;
+    color: white;
+}
+
+.padding {
+    background-color: green;
+    color: white;
+    padding: 20px;
+}
+
+/* Padding Individual */
+.padding-individual {
+    background-color: purple;
+    color: white;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+
+/* ShortHand Padding */
+.shorthand-padding {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px 30px 40px;
+}
+
+.shorthand-padding-2 {
+    background-color: pink;
+    color: white;
+    padding: 15px;
+}
+
+/* Padding com width */
+.without-border-box {
+    background-color: cyan;
+    color: black;
+    padding: 50px;
+    width: 400px;
+}
+
+.border-box {
+    background-color: #444;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
