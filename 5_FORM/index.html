@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h2>Formulário HTML</h2>
+    <!-- 1 - Primeiro Formulário -->
+    <!-- 2 - Atributos do formulário -->
+    <form action="registrar.php" method="post">
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text">
+        </div>
+        <!-- 3 - Atributo nome -->
+        <div>
+            <!-- 4 - Atributo label -->
+            <label for="age">Idade: </label>
+            <input type="text" name="age">
+        </div>
+        <!-- 6 - Select -->
+        <div>
+            <label for="job">Selecione seu cargo:</label>
+            <select name="job">
+                <option value="desenvolvedor">Desenvolvedor</option>
+                <option value="designer">Designer</option>
+                <option value="gerente">Gerente</option>
+            </select>
+        </div>
+
+        <!-- 7 - Atributo Selected -->
+        <div>
+            <label for="contract">Você leu os termos do contrato?</label>
+            <select name="contract">
+                <option value="sim" selected>Sim</option>
+                <option value="nao">Não</option>
+            </select>
+        </div>
+
+        <!-- 8 - Multiplas opções -->
+        <div>
+            <label for="itens">Selecione os itens desejados:</label>
+            <select name="itens" multiple>
+                <option value="pera">Pera</option>
+                <option value="maça">Maçã</option>
+                <option value="banana">Banana</option>
+                <option value="melancia">Melancia</option>
+                <option value="laranja">Laranja</option>
+            </select>
+        </div>
+
+        <!-- 9 - Textarea -->
+        <div>
+            <label for="comment">Comentário:</label>
+            <textarea name="comment"></textarea>
+        </div>
+
+        <!-- Fieldset e Legend -->
+        <div>
+            <fieldset>
+                <legend>Preencha as suas informações</legend>
+                <label for="firstname">Primeiro Nome:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome:</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+
+        <!-- 11 - Datalist -->
+        <div>
+            <label for="city">Cidade:</label>
+            <input list="cities" name="city">
+            <datalist id="cities">
+                <option value="São Paulo">
+                <option value="Rio de Janeiro">
+                <option value="Belo Horizonte">
+                <option value="Curitiba">
+                <option value="Porto Alegre">
+            </datalist>
+        </div>
+
+        <!-- 12 - Senha -->
+        <div>
+            <label for="password">Digite a sua senha:</label>
+            <input type="password" name="password">
+        </div>
+
+        <!-- 14 - Radio Buttons -->
+        <div>
+            <label for="car_model">Selecione o modelo do carro:</label>
+            <div class="radio">
+                <input type="radio" name="car_model" value="sedan">
+                <label for="sedan">Sedan</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="car_model" value="suv">
+                <label for="suv">SUV</label>
+            </div>
+            <div class="radio">
+                <input type="radio" name="car_model" value="hatchback">
+                <label for="hatchback">Hatchback</label>
+            </div>
+        </div>
+
+        <!-- 15 - Checkbox -->
+        <div>
+            <label for="optionals">Opções do carro:</label>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="big_tires">
+                <label for="big_tires">Pneus Grandes</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="leather_seats">
+                <label for="leather_seats">Assentos de Couro</label>
+            </div>
+            <div class="radio">
+                <input type="checkbox" name="optionals[]" value="sunroof">
+                <label for="sunroof">Teto Solar</label>
+            </div>
+        </div>
+
+        <!-- 16 - Datas -->
+        <div>
+            <label for="birthday">Data de Nascimento:</label>
+            <input type="date" name="birthday">
+        </div>
+
+        <!-- 17 - Arquivos -->
+        <div>
+            <label for="image">Selecione uma imagem:</label>
+            <input type="file" name="image">
+        </div>
+
+        <!-- 18 - Números -->
+        <div>
+            <label for="salary">Salário:</label>
+            <input type="number" name="salary">
+        </div>
+
+        <!-- 19 - E-mail -->
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email">
+        </div>
+
+        <!-- 20 - Value -->
+        <div>
+            <label for="value">Valor:</label>
+            <input type="text" value="O meu valor é este" name="value">
+        </div>
+
+        <!-- 21 - Disabled -->
+        <div>
+            <p>Tente mudar o valor:</p>
+            <input type="text" value="Este campo está desativado" name="disabled" disabled>
+        </div>
+
+        <!-- 22 - Placeholder -->
+        <div>
+            <label for="placeholder">Digite algo:</label>
+            <input type="text" placeholder="Este é um campo de texto com placeholder" name="placeholder">
+        </div>
+
+        <!-- 23 - Required -->
+        <div>
+            <label for="required">Campo obrigatório:</label>
+            <input type="text" name="required" required>
+        </div>
+
+        <!-- 13 - Resetar formulário -->
+        <input type="reset" value="Limpar">
+
+
+        <!-- 5 - Envio de formulário -->
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
