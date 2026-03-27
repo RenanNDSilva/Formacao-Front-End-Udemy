@@ -1,0 +1,23 @@
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        color: blue;
+    }
+}
+
+@media (min-width: 769px) {
+    h1 {
+        color: red;
+    }
+}
+
+/* Landscape */
+h3 {
+    display: none;
+}
+
+@media (orientation: landscape) {
+    h3 {
+        display: block;
+    }
+}
