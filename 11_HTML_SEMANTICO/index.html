@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define o conjunto de caracteres usado na página -->
+    <meta charset="UTF-8">
+
+    <!-- Faz a página se adaptar a diferentes tamanhos de tela -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Descrição da página, útil para mecanismos de busca -->
+    <meta name="description" content="Exemplo de HTML semântico com comentários explicando cada tag.">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Título exibido na aba do navegador -->
+    <title>Exemplo de HTML Semântico</title>
+</head>
+
+<body>
+
+    <!-- 
+        <header>
+        Cabeçalho da página.
+        Normalmente contém título, logo, menu de navegação ou introdução.
+    -->
+    <header>
+        <h1>Estrutura de um HTML Semântico</h1>
+        <p>Exemplo prático com as principais tags semânticas do HTML5.</p>
+
+        <!-- 
+            <nav>
+            Área destinada aos links de navegação principais do site.
+        -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#artigo">Artigo</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 
+        <main>
+        Conteúdo principal da página.
+        Deve reunir o assunto central do documento.
+    -->
+    <main>
+
+        <!-- 
+            <section>
+            Seção temática da página.
+            Agrupa conteúdos relacionados dentro de um mesmo contexto.
+        -->
+        <section id="inicio">
+            <h2>Início</h2>
+            <p>
+                Este é um exemplo de página construída com elementos semânticos,
+                que deixam o HTML mais organizado e mais fácil de entender.
+            </p>
+        </section>
+
+        <!-- Outra seção temática -->
+        <section id="sobre">
+            <h2>Sobre HTML Semântico</h2>
+            <p>
+                HTML semântico é o uso de tags que possuem significado,
+                ajudando na acessibilidade, SEO e manutenção do código.
+            </p>
+
+            <!-- 
+                <mark>
+                Destaca uma parte importante do texto.
+            -->
+            <p>
+                Usar tags semânticas é uma <mark>boa prática</mark> no desenvolvimento web.
+            </p>
+        </section>
+
+        <!-- 
+            <article>
+            Conteúdo independente e autocontido.
+            Pode ser lido separadamente do restante da página.
+            Exemplo: post, notícia, artigo ou publicação.
+        -->
+        <article id="artigo">
+            <h2>Artigo: Vantagens do HTML Semântico</h2>
+
+            <!-- 
+                <time>
+                Representa uma data ou horário.
+                O atributo datetime guarda a data em formato legível para máquinas.
+            -->
+            <p>Publicado em <time datetime="2026-04-02">02 de abril de 2026</time></p>
+
+            <p>
+                O HTML semântico melhora a interpretação da página por navegadores,
+                motores de busca e tecnologias assistivas.
+            </p>
+
+            <!-- 
+                <section> dentro de <article>
+                Pode dividir o artigo em subtópicos.
+            -->
+            <section>
+                <h3>Acessibilidade</h3>
+                <p>
+                    Leitores de tela conseguem interpretar melhor o conteúdo quando a estrutura é semântica.
+                </p>
+            </section>
+
+            <section>
+                <h3>SEO</h3>
+                <p>
+                    Mecanismos de busca entendem melhor a hierarquia e a importância das informações.
+                </p>
+            </section>
+
+            <!-- 
+                <figure>
+                Usada para agrupar conteúdo ilustrativo, como imagem, gráfico ou diagrama.
+            -->
+            <figure>
+                <img src="html-semantico.png" alt="Exemplo ilustrativo de estrutura semântica em HTML" width="300">
+
+                <!-- 
+                    <figcaption>
+                    Legenda descritiva para o conteúdo dentro de <figure>.
+                -->
+                <figcaption>Figura 1: Exemplo visual de uma estrutura HTML semântica.</figcaption>
+            </figure>
+        </article>
+
+        <!-- 
+            <aside>
+            Conteúdo complementar ao conteúdo principal.
+            Pode conter observações, links relacionados, curiosidades ou propagandas.
+        -->
+        <aside>
+            <h2>Curiosidade</h2>
+            <p>
+                Antes do HTML5, muitos sites eram construídos quase totalmente com <code>&lt;div&gt;</code>.
+            </p>
+        </aside>
+
+    </main>
+
+    <!-- 
+        <footer>
+        Rodapé da página.
+        Geralmente contém direitos autorais, contato, links complementares, autor, etc.
+    -->
+    <footer id="contato">
+        <p>&copy; 2026 - Exemplo de HTML Semântico</p>
+
+        <!-- 
+            <address>
+            Usada para informações de contato do autor, empresa ou responsável pela página/artigo.
+        -->
+        <address>
+            Email: <a href="mailto:contato@site.com">contato@site.com</a><br>
+            Telefone: (11) 99999-9999
+        </address>
+    </footer>
+
+</body>
+
+</html>
