@@ -28,7 +28,7 @@ console.log(typeof `Template Literals`);
 // 5 - Caracteres especiais em strings
 
 console.log("Linha 1\nLinha 2");
-console.log("Tab \t Espaço");
+console.log("Tab\tEspaço");   
 console.log("Aspas simples: \' e aspas duplas: \"");
 console.log("Barra invertida: \\");
 
