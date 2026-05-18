@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios - Formação Front-End</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Lista de Exercícios - Formação Front-End</h1>
+            <p class="subtitle">Pratique seus conhecimentos em HTML, CSS e JavaScript</p>
+        </header>
+
+        <!-- SEÇÃO HTML/CSS -->
+        <section class="exercise-section">
+            <h2>🏗️ SEÇÃO 1: HTML & CSS Básico</h2>
+
+            <div class="exercise">
+                <h3>Exercício 1.1 - Página de Portfólio Pessoal</h3>
+                <p class="difficulty">Dificuldade: ⭐ Fácil</p>
+                <p class="description">Crie uma página de portfólio com sua informação pessoal incluindo seções: Sobre Mim, Projetos e Contato.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use HTML semântico: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code></li>
+                        <li>Estruture com divs e classes bem nomeadas para o CSS</li>
+                        <li>Adicione uma paleta de cores consistente</li>
+                        <li>Use flexbox para alinhar elementos horizontalmente</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 1.2 - Galeria de Imagens Responsiva</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐ Médio</p>
+                <p class="description">Crie uma galeria de imagens que se adapta a diferentes tamanhos de tela (desktop, tablet, mobile).</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use <code>@media queries</code> para diferentes breakpoints</li>
+                        <li>Implemente com CSS Grid para layout responsivo</li>
+                        <li>Adicione meta tag viewport: <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></li>
+                        <li>Use unidades relativas: <code>%</code>, <code>em</code>, <code>rem</code> ao invés de <code>px</code></li>
+                        <li>Teste em diferentes resoluções (mobile: 320px, tablet: 768px, desktop: 1024px+)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 1.3 - Formulário de Cadastro com Validação CSS</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐ Médio</p>
+                <p class="description">Crie um formulário completo com campos de texto, email, senha, select e checkbox com estilos visuais.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use seletores CSS: <code>:focus</code>, <code>:hover</code>, <code>:valid</code>, <code>:invalid</code></li>
+                        <li>Implemente labels associadas com atributo <code>for</code></li>
+                        <li>Use <code>&lt;fieldset&gt;</code> e <code>&lt;legend&gt;</code> para agrupar campos</li>
+                        <li>Adicione feedback visual com borders e cores para inputs válidos/inválidos</li>
+                        <li>Estruture com flexbox para alinhar campos verticalmente</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 1.4 - Clone de Landing Page</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Recrie uma landing page de uma empresa/produto real (SaaS, e-commerce, etc) focando em layout e responsividade.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Analise a página original e identifique as seções principais</li>
+                        <li>Use CSS Grid para layouts mais complexos</li>
+                        <li>Implemente um menu de navegação responsivo</li>
+                        <li>Adicione efeitos com <code>:hover</code> em botões e links</li>
+                        <li>Use imagens de placeholder (Unsplash, Pexels)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO JAVASCRIPT BÁSICO -->
+        <section class="exercise-section">
+            <h2>⚙️ SEÇÃO 2: JavaScript Básico</h2>
+
+            <div class="exercise">
+                <h3>Exercício 2.1 - Conversor de Temperatura</h3>
+                <p class="difficulty">Dificuldade: ⭐ Fácil</p>
+                <p class="description">Crie uma calculadora que converte temperaturas entre Celsius, Fahrenheit e Kelvin.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use <code>const</code> e <code>let</code> para declarar variáveis</li>
+                        <li>Implemente funções para cada conversão: <code>celsiusParaFahrenheit()</code></li>
+                        <li>Use operadores aritméticos: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code></li>
+                        <li>Crie um input HTML para o usuário inserir a temperatura</li>
+                        <li>Valide se o input é um número válido com <code>isNaN()</code> ou <code>typeof</code></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 2.2 - Calculadora IMC (Índice de Massa Corporal)</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐ Médio</p>
+                <p class="description">Crie uma calculadora de IMC que retorna a categoria de peso e um feedback personalizado.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Fórmula: IMC = peso / (altura²)</li>
+                        <li>Use estruturas condicionais: <code>if/else</code> ou <code>switch</code></li>
+                        <li>Categorias: Abaixo do peso (&lt;18.5), Normal (18.5-24.9), Sobrepeso (25-29.9), Obeso (&gt;30)</li>
+                        <li>Use <code>document.getElementById()</code> ou <code>document.querySelector()</code> para acessar elementos</li>
+                        <li>Adicione o resultado dinamicamente com <code>innerHTML</code></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 2.3 - Validador de CPF</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐ Médio</p>
+                <p class="description">Crie um validador de CPF que verifica o formato e calcula os dígitos verificadores.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use <code>string.length</code> para verificar o tamanho</li>
+                        <li>Use <code>string.split('')</code> para dividir em caracteres</li>
+                        <li>Use loops <code>for</code> para iterar e validar os dígitos</li>
+                        <li>Implemente a fórmula do primeiro dígito verificador (soma ponderada)</li>
+                        <li>Repita para o segundo dígito verificador</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 2.4 - Jogo da Velha (Tic Tac Toe)</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Implemente o jogo da velha com lógica de verificação de vitória e alternância de jogadores.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use um array 3x3 para representar o tabuleiro</li>
+                        <li>Implemente função para verificar vitória: verificar linhas, colunas e diagonais</li>
+                        <li>Use <code>addEventListener</code> para capturar cliques nos botões</li>
+                        <li>Controle turnos com variável booleana ou contador</li>
+                        <li>Adicione função para resetar o jogo</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO ARRAYS E OBJETOS -->
+        <section class="exercise-section">
+            <h2>📦 SEÇÃO 3: Arrays e Objetos</h2>
+
+            <div class="exercise">
+                <h3>Exercício 3.1 - Lista de Tarefas (TODO List)</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐ Médio</p>
+                <p class="description">Crie um app de lista de tarefas com funcionalidades de adicionar, remover e marcar como completo.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use array de objetos: <code>[{id: 1, texto: "Tarefa", completo: false}]</code></li>
+                        <li>Implemente métodos: <code>push()</code> para adicionar, <code>splice()</code> para remover</li>
+                        <li>Use <code>filter()</code> para remover tarefas completas</li>
+                        <li>Use <code>map()</code> para renderizar lista no DOM</li>
+                        <li>Salve dados no <code>localStorage</code> para persistência</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 3.2 - Catálogo de Produtos</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐ Médio</p>
+                <p class="description">Crie um catálogo com produtos (nome, preço, categoria) com funcionalidades de filtro e busca.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Estruture produtos como objetos: <code>{id, nome, preco, categoria, descrição}</code></li>
+                        <li>Use <code>filter()</code> para filtrar por categoria</li>
+                        <li>Use <code>find()</code> ou <code>filter()</code> com <code>includes()</code> para buscar por nome</li>
+                        <li>Use <code>sort()</code> para ordenar por preço</li>
+                        <li>Renderize cards de produtos dinamicamente com <code>innerHTML</code> ou <code>createElement()</code></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 3.3 - Calculadora de Estatísticas</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Crie uma calculadora que retorna média, mediana, moda e desvio padrão de um conjunto de números.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Média: Use <code>reduce()</code> para somar e dividir por <code>length</code></li>
+                        <li>Mediana: <code>sort()</code> o array e pegue o elemento do meio</li>
+                        <li>Moda: Use <code>reduce()</code> para contar frequências em um objeto</li>
+                        <li>Desvio Padrão: Use fórmula matemática com <code>map()</code> e <code>Math.sqrt()</code></li>
+                        <li>Separe em funções: <code>calcularMedia()</code>, <code>calcularMediana()</code>, etc.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 3.4 - Gerenciador de Contatos</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Crie um app que gerencia contatos com opções de adicionar, editar, remover e buscar.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Estruture contatos: <code>{id, nome, email, telefone, categoria}</code></li>
+                        <li>Implemente funções: <code>adicionarContato()</code>, <code>editarContato()</code>, <code>removerContato()</code></li>
+                        <li>Use <code>find()</code> para buscar por ID ou nome</li>
+                        <li>Valide email com regex: <code>/^[^\s@]+@[^\s@]+\.[^\s@]+$/</code></li>
+                        <li>Persista dados no <code>localStorage</code></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO OOP -->
+        <section class="exercise-section">
+            <h2>🏛️ SEÇÃO 4: Programação Orientada a Objetos</h2>
+
+            <div class="exercise">
+                <h3>Exercício 4.1 - Sistema de Banco</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐ Médio</p>
+                <p class="description">Crie classes para representar Banco, Conta e Cliente com operações de depósito, saque e transferência.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Crie classe <code>Cliente</code> com propriedades: nome, CPF</li>
+                        <li>Crie classe <code>Conta</code> com: titular, saldo, numero, agencia</li>
+                        <li>Implemente métodos: <code>depositar()</code>, <code>sacar()</code>, <code>consultarSaldo()</code></li>
+                        <li>Use <code>constructor()</code> para inicializar propriedades</li>
+                        <li>Adicione validações: saldo insuficiente, valores negativos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 4.2 - Sistema de Biblioteca</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Crie classes para Livro, Autor, Biblioteca e Usuario com empréstimos e devoluções.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Classe <code>Livro</code>: title, author, ISBN, disponivel</li>
+                        <li>Classe <code>Usuario</code>: nome, ID, livrosEmprestados (array)</li>
+                        <li>Classe <code>Biblioteca</code>: acervo (array de livros), usuarios</li>
+                        <li>Métodos: <code>emprestarLivro()</code>, <code>devolverLivro()</code>, <code>listarDisponíveis()</code></li>
+                        <li>Use herança se necessário para tipos de usuários diferentes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 4.3 - Jogo de RPG com Classes</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Crie um mini jogo RPG com classes de Personagem, Guerreiro, Mago com sistemas de combate.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Classe base <code>Personagem</code>: nome, vida, mana, nivel, experiencia</li>
+                        <li>Subclasses: <code>Guerreiro</code> (força), <code>Mago</code> (magia)</li>
+                        <li>Implemente herança com <code>extends</code> e <code>super()</code></li>
+                        <li>Métodos de combate: <code>atacar()</code>, <code>defender()</code>, <code>usarMagia()</code></li>
+                        <li>Sistema de experiência e level up</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 4.4 - Sistema de E-commerce</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Crie um sistema completo com Produto, Carrinho, Pedido e Cliente com cálculo de impostos.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Classe <code>Produto</code>: id, nome, preco, estoque, categoria</li>
+                        <li>Classe <code>ItemCarrinho</code>: produto, quantidade</li>
+                        <li>Classe <code>Carrinho</code>: itens[], metodos: addItem, removeItem, calcularTotal</li>
+                        <li>Classe <code>Pedido</code>: numero, cliente, carrinho, data, status</li>
+                        <li>Implemente cálculo de desconto, imposto e frete</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO ASYNC -->
+        <section class="exercise-section">
+            <h2>⚡ SEÇÃO 5: Programação Assíncrona</h2>
+
+            <div class="exercise">
+                <h3>Exercício 5.1 - Requisição de API com Fetch</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐ Médio</p>
+                <p class="description">Crie uma página que consome uma API pública (JSONPlaceholder, OpenWeather) e exibe os dados.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use <code>fetch(url)</code> para fazer requisição GET</li>
+                        <li>Use <code>async/await</code> para melhor legibilidade</li>
+                        <li>Trate erros com <code>try/catch</code></li>
+                        <li>Use <code>.json()</code> para converter resposta</li>
+                        <li>Exiba um loading enquanto a requisição está sendo feita</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 5.2 - Buscador de Usuários GitHub</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐ Médio</p>
+                <p class="description">Crie um app que busca usuários do GitHub e exibe seus repositórios e informações.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use API do GitHub: <code>https://api.github.com/users/{username}</code></li>
+                        <li>Busque repositórios: <code>https://api.github.com/users/{username}/repos</code></li>
+                        <li>Implemente debounce para não fazer requisição a cada caractere digitado</li>
+                        <li>Adicione validação se o usuário existe</li>
+                        <li>Exiba avatar, bio, localização e repositórios com links</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 5.3 - Previsão do Tempo</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Crie um app de previsão do tempo usando uma API (OpenWeatherMap) com dados atualizados.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use API OpenWeatherMap (com chave gratuita)</li>
+                        <li>Obtenha localização do usuário com <code>navigator.geolocation</code></li>
+                        <li>Ou permita busca por cidade</li>
+                        <li>Exiba temperatura atual, sensação térmica, umidade, velocidade do vento</li>
+                        <li>Mostre previsão para próximos dias com ícones apropriados</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 5.4 - Sistema de Chat com WebSocket</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Crie um chat em tempo real usando WebSocket (socket.io ou nativo WebSocket).</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use socket.io para conexão em tempo real (mais fácil)</li>
+                        <li>Ou use WebSocket nativo: <code>new WebSocket('ws://...')</code></li>
+                        <li>Implemente evento de conexão e desconexão</li>
+                        <li>Envie/receba mensagens com eventos</li>
+                        <li>Exiba lista de usuários conectados</li>
+                        <li>Adicione timestamps nas mensagens</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PROJETOS FINAIS -->
+        <section class="exercise-section">
+            <h2>🎯 SEÇÃO 6: Projetos Integrados (HTML + CSS + JS)</h2>
+
+            <div class="exercise">
+                <h3>Exercício 6.1 - Aplicativo de Notas</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Crie um app completo de notas com CRUD (criar, ler, atualizar, deletar), categorias e busca.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use <code>localStorage</code> ou IndexedDB para persistência</li>
+                        <li>Implemente interface responsiva (desktop e mobile)</li>
+                        <li>Adicione categorias com cores diferentes</li>
+                        <li>Funcionalidades: criar, editar, deletar, arquivar notas</li>
+                        <li>Busca por texto ou categoria</li>
+                        <li>Ordenação por data de criação/modificação</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 6.2 - Pomodoro Timer</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐ Médio</p>
+                <p class="description">Crie um timer Pomodoro com trabalho, pausa curta e pausa longa.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use <code>setInterval()</code> e <code>clearInterval()</code> para controlar o timer</li>
+                        <li>Padrão Pomodoro: 25 min trabalho, 5 min pausa curta, 15 min pausa longa</li>
+                        <li>Botões: iniciar, pausar, reiniciar</li>
+                        <li>Exiba o tempo em formato MM:SS</li>
+                        <li>Adicione notificação sonora quando termina</li>
+                        <li>Interface visual que muda de cor em cada fase</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 6.3 - Gerenciador de Despesas</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Crie um app de controle de despesas com categorias, gráficos e relatórios.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Categorias: alimentação, transporte, saúde, lazer, outros</li>
+                        <li>Campos: descrição, valor, categoria, data</li>
+                        <li>Funcionalidades: adicionar, editar, deletar, filtrar por categoria/período</li>
+                        <li>Use Chart.js ou Recharts para gráficos</li>
+                        <li>Calcule total gasto, por categoria, por período</li>
+                        <li>Exporte dados em CSV ou PDF</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 6.4 - Blog com Comentários</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Crie um blog com posts, comentários, likes e sistema de tags.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Estrutura de dados: posts com título, conteúdo, autor, data, tags</li>
+                        <li>Comentários: autor, texto, data, likes</li>
+                        <li>Sistema de tags para filtrar posts</li>
+                        <li>Busca por título ou conteúdo</li>
+                        <li>Editor markdown ou rich text para criar posts</li>
+                        <li>Persista dados em localStorage ou Firebase</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 6.5 - Rede Social Simples</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐⭐ Muito Desafiador</p>
+                <p class="description">Crie uma rede social com usuários, posts, comentários, likes, seguidores e mensagens.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Estrutura: Usuários, Posts, Comentários, Mensagens, Seguidores</li>
+                        <li>Funcionalidades: login/registro, perfil, criar post, comentar, like</li>
+                        <li>Seguidores: seguir/deseguir usuários, feed personalizado</li>
+                        <li>Mensagens privadas entre usuários</li>
+                        <li>Notificações de likes e comentários</li>
+                        <li>Use Firebase ou crie backend com Node.js/Express</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DESAFIOS EXTRAS -->
+        <section class="exercise-section">
+            <h2>🚀 SEÇÃO 7: Desafios Extra</h2>
+
+            <div class="exercise">
+                <h3>Exercício 7.1 - Jogo: Snake</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Crie o clássico jogo Snake com canvas, colisões e sistema de pontuação.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use HTML5 Canvas: <code>&lt;canvas&gt;</code></li>
+                        <li>Use <code>requestAnimationFrame()</code> para renderização suave</li>
+                        <li>Controle com setas do teclado: <code>addEventListener('keydown')</code></li>
+                        <li>Implemente colisão com parede e com o próprio corpo</li>
+                        <li>Sistema de pontos por comida</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 7.2 - Editor de Código com Syntax Highlight</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Crie um editor de código simples com colorização de sintaxe para JavaScript/HTML/CSS.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use biblioteca Prism.js ou Highlight.js</li>
+                        <li>Sincronize scroll entre textarea e preview</li>
+                        <li>Implemente tema claro/escuro</li>
+                        <li>Adicione autocomplete com Ctrl+Space</li>
+                        <li>Salve o código no localStorage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 7.3 - Aplicativo de Música</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐ Desafiador</p>
+                <p class="description">Crie um player de música com playlist, controles e visualizador.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use <code>&lt;audio&gt;</code> tag HTML5</li>
+                        <li>Controles: play, pause, next, previous, volume</li>
+                        <li>Barra de progresso da música</li>
+                        <li>Playlist com duração das músicas</li>
+                        <li>Use Web Audio API para visualizador</li>
+                        <li>Armazene playlist no localStorage</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exercise">
+                <h3>Exercício 7.4 - Aplicativo de Fotos com Filtros</h3>
+                <p class="difficulty">Dificuldade: ⭐⭐⭐⭐ Muito Desafiador</p>
+                <p class="description">Crie um editor de fotos com filtros, recorte e manipulação de imagens.</p>
+                <div class="tips">
+                    <strong>💡 Dicas:</strong>
+                    <ul>
+                        <li>Use Canvas para manipular imagens</li>
+                        <li>Filtros CSS: brightness, contrast, saturation, blur, grayscale</li>
+                        <li>Ou use Canvas para filtros mais avançados</li>
+                        <li>Implemente recorte com mouse drag</li>
+                        <li>Salve/exporte imagem editada como PNG</li>
+                        <li>Upload de imagens com <code>input type="file"</code></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>💡 <strong>Dica Geral:</strong> Comece pelos exercícios fáceis, e progressivamente passe para os mais desafiadores. Não hesite em consultar a documentação (MDN, W3Schools) e reutilizar código de exercícios anteriores!</p>
+            <p>📖 Referências úteis: <a href="https://developer.mozilla.org">MDN Web Docs</a> | <a href="https://www.w3schools.com">W3Schools</a> | <a href="https://www.javascript.info">JavaScript.info</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>
